@@ -18,10 +18,9 @@
         <div class="col-12">
             <h2>Товары</h2>
             <br>
-            {% for i in catalog %}            
-            <p>{{ i["name"] }}, id: {{ i["id"] }}, Цена: {{ i["price"] }} {{ i["currency"] }}</p>
-
-            <hr />
+            {% for product in catalog %}            
+            <p>{{ product["name"] }}, id: {{ product["id"] }}, Цена: {{ product["price"] }} {{ product["currency"] }}</p>
+            <hr />      
             {% endfor %}
         </div>  
     </div>
