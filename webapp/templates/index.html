@@ -12,18 +12,34 @@
   </head>
   <body>
     <div class="container">
-    <h1>Каталог online-shop</h1>
+    <h1>online-shop</h1>
     <br>    
-    <div class="row">
-        <div class="col-12">
-            <h2>Товары</h2>
-            <br>
-            {% for product in catalog %}            
-            <p>{{ product["name"] }}, id: {{ product["id"] }}, Цена: {{ product["price"] }} {{ product["currency"] }}</p>
-            <hr />      
-            {% endfor %}
-            <p>{{ key }} - это пример для config - в дальнейшем надо удалить</p>
-        </div>  
+    <div class="row">        
+        <div class="col-4">
+          <h2>Категории</h2><br>          
+          Тепловое<hr /> 
+          Механическое<hr />          
+          
+
+              
+                      
+        </div>
+        
+        <div class="col-8">
+          <h2>Товары</h2>
+          <br>
+          {% for product in catalogs %}            
+          <p>{{ product.name }}</p>
+          <p>ID: {{ product.id }}</p>
+          <p>{{ product.short_description }}</p>
+          <p>Цена: {{ product.price }} {{ product.currency }}</p>
+
+          <hr />      
+          {% endfor %}            
+        </div>
+
+
+
     </div>
     </div>
     <!-- Optional JavaScript -->
