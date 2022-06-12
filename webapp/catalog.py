@@ -1,2 +1,0 @@
-catalog = [{"id":1, "top_level": "Тепловое", "middle_level": "Печи для пиццы", "name": "Печь для пиццы Apach AMS1", "price": 31280, "currency": "RUB"}, 
-{"id":2, "top_level": "Тепловое", "middle_level": "Печи для пиццы", "name": "Печь для пиццы Itpizza MD1", "price": 44268, "currency": "RUB"}]
