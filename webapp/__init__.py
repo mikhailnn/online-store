@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-from webapp.queries import goods
+from queries import goods
 
 
 

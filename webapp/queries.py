@@ -1,4 +1,4 @@
-from webapp.model import Catalog
+from model import Catalog
 
 
 
